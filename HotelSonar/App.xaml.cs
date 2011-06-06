@@ -105,7 +105,7 @@ namespace HotelSonar
         {
             if (System.Diagnostics.Debugger.IsAttached)
             {
-                // A navigation has failed; break into the debugger
+                // A navigation has failed; break into the debugger                         
                 System.Diagnostics.Debugger.Break();
             }
         }

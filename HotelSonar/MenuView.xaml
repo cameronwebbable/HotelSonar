@@ -17,16 +17,29 @@
 	<!--LayoutRoot contains the root grid where all other page content is placed-->
 	<Grid x:Name="LayoutRoot">
 		<Grid.Background>
-			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-				<GradientStop Color="Black" Offset="0"/>
-				<GradientStop Color="#FFFB6464" Offset="1"/>
-			</LinearGradientBrush>
+			<RadialGradientBrush>
+				<GradientStop Color="#FFD60505"/>
+				<GradientStop Color="#FF930000" Offset="1"/>
+			</RadialGradientBrush>
 		</Grid.Background>
 		<controls:Panorama Title="hotel sonar">
 
 			<!--Panorama item one-->
 			<controls:PanoramaItem Header="nearby deals">
-				<Grid/>
+				<Grid>
+                    <ListBox Margin="0,0,0,8" Name="listBox">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" Height="132">
+                                    <StackPanel Width="370">
+                                        <TextBlock Text="{Binding Description}" Foreground="#FFC8AB14" FontSize="28" />
+                                        <TextBlock Text="{Binding Neighborhood}" TextWrapping="Wrap" FontSize="24" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
 			</controls:PanoramaItem>
 
 			<!--Panorama item two-->
