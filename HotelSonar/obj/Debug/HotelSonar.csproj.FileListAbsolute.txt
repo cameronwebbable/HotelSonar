@@ -1,0 +1,17 @@
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\Bin\Debug\ApplicationIcon.png
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\Bin\Debug\Background.png
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\Bin\Debug\HotelSonar.dll
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\Bin\Debug\HotelSonar.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\Bin\Debug\AppManifest.xaml
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\Bin\Debug\HotelSonar.xap
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\obj\Debug\ResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\obj\Debug\App.g.i.cs
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\obj\Debug\DetailsPage.g.i.cs
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\obj\Debug\MainPage.g.i.cs
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\obj\Debug\HotelSonar.g.resources
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\obj\Debug\HotelSonar.dll
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\obj\Debug\HotelSonar.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\obj\Debug\XapCacheFile.xml
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\Bin\Debug\Microsoft.Phone.Controls.dll
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\Bin\Debug\Microsoft.Phone.Controls.xml
+c:\users\administrator\documents\visual studio 2010\Projects\HotelSonar\HotelSonar\obj\Debug\MenuView.g.i.cs
