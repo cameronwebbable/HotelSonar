@@ -7,6 +7,7 @@
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+        d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
 	x:Class="HotelSonar.MenuView"
 	FontFamily="{StaticResource PhoneFontFamilyNormal}"
 	FontSize="{StaticResource PhoneFontSizeNormal}"
@@ -16,12 +17,6 @@
 
 	<!--LayoutRoot contains the root grid where all other page content is placed-->
 	<Grid x:Name="LayoutRoot">
-		<Grid.Background>
-			<RadialGradientBrush>
-				<GradientStop Color="#FFD60505"/>
-				<GradientStop Color="#FF930000" Offset="1"/>
-			</RadialGradientBrush>
-		</Grid.Background>
 		<controls:Panorama Title="hotel sonar">
 
 			<!--Panorama item one-->
@@ -32,8 +27,8 @@
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal" Height="132">
                                     <StackPanel Width="370">
-                                        <TextBlock Text="{Binding Description}" Foreground="#FFC8AB14" FontSize="28" />
-                                        <TextBlock Text="{Binding Neighborhood}" TextWrapping="Wrap" FontSize="24" />
+                                        <TextBlock Text="{Binding description}" Foreground="#FFC8AB14" FontSize="28" />
+                                        <TextBlock Text="{Binding neighborhood}" TextWrapping="Wrap" FontSize="24" />
                                     </StackPanel>
                                 </StackPanel>
                             </DataTemplate>

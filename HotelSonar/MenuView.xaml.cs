@@ -32,11 +32,10 @@ namespace HotelSonar
         private void GeoWatcherPositionChanged(object sender, GeoPositionChangedEventArgs<GeoCoordinate> e)
         {
             var accuracy = e.Position.Location.HorizontalAccuracy;
-            Dispatcher.BeginInvoke(() =>
-            {
-                loadData(e.Position.Location.Latitude.ToString(), e.Position.Location.Longitude.ToString());
-                _geoWatcher.Stop();
-            });
+            
+            loadData(e.Position.Location.Latitude.ToString(), e.Position.Location.Longitude.ToString());
+            _geoWatcher.Stop();
+            
         }
 
         //True for success, false for fail
@@ -59,13 +58,14 @@ namespace HotelSonar
             listBox.ItemsSource = from hotel in xmlDeals.Element("Result").Descendants("HotelDeal")
                                   select new Hotel
                                   {
-                                       description = "Garbage",
+                                      description = hotel.Element("Headline").Value,
                                        neighborhood = hotel.Element("Neighborhood").Value,
                                        rating = hotel.Element("StarRating").Value,
                                        price = hotel.Element("Price").Value,
                                        redirectURL = hotel.Element("Url").Value
                                   };
 
+            MessageBox.Show((listBox.Items[0] as Hotel).description.ToString());
         }
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
