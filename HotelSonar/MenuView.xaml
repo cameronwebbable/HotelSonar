@@ -21,20 +21,18 @@
 
 			<!--Panorama item one-->
 			<controls:PanoramaItem Header="nearby deals">
-				<Grid>
-                    <ListBox Margin="0,0,0,8" Name="listBox">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel Orientation="Horizontal" Height="132">
-                                    <StackPanel Width="370">
-                                        <TextBlock Text="{Binding description}" Foreground="#FFC8AB14" FontSize="28" />
-                                        <TextBlock Text="{Binding neighborhood}" TextWrapping="Wrap" FontSize="24" />
-                                    </StackPanel>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
-                </Grid>
+				<ListBox x:Name="listBox" Height="490" Width="420">
+					<ListBox.ItemTemplate>
+						<DataTemplate>
+							<StackPanel Orientation="Horizontal" Height="132">
+								<StackPanel Width="370">
+									<TextBlock Text="{Binding description}" Foreground="#FFC8AB14" FontSize="28" />
+									<TextBlock Text="{Binding neighborhood}" TextWrapping="Wrap" FontSize="24" />
+								</StackPanel>
+							</StackPanel>
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+				</ListBox>
 			</controls:PanoramaItem>
 
 			<!--Panorama item two-->
